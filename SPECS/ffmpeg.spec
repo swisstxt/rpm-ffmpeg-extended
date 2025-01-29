@@ -33,7 +33,6 @@
 %global _without_frei0r   1
 %global _without_lv2      1
 %endif
-%global _with_rubberband  1
 %global _with_smb         1
 %global _with_snappy      1
 %global _with_tesseract   1
