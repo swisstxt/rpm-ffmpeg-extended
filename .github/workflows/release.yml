@@ -23,7 +23,7 @@ jobs:
       run: find rpmbuild -maxdepth 1 -type d -exec sh -c 'cd "{}"; sha256sum *.rpm' \; > rpmbuild/SHA256SUMS
 
     - name: Upload built RPMs
-      uses: actions/upload-artifact@v3.1.0
+      uses: actions/upload-artifact@v4
       with:
         name: ffmpeg-nofusion
         path: |
