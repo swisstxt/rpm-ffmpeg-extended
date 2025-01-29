@@ -13,12 +13,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    
+
     - name: Build using container
       run: make COMMIT=${GITHUB_SHA} docker-build
-  
+
     - name: Upload built RPMs
-      uses: actions/upload-artifact@v3.1.0
+      uses: actions/upload-artifact@v4
       with:
         # Artifact name
         name: ffmpeg-nofusion
